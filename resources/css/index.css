@@ -12,6 +12,7 @@
   --dark-desat-cyan: hsl(167, 40%, 24%);
   --dark-blue: hsl(198, 62%, 26%);
   --dark-mod-cyan: hsl(168, 34%, 41%);
+  --light-blue: hsl(200, 100%, 62%);
 
   /* Neutral */
   --very-dark-desat-blue: hsl(212, 27%, 19%);
@@ -45,4 +46,86 @@
 
 ul {
   list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+a,
+button {
+  text-decoration: none;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+  width: 100%;
+  background-color: var(--light-blue);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+}
+
+.header__logo img {
+  width: 175px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 2.1%;
+  font-size: 1.375rem;
+}
+
+.nav__list {
+  display: inline-flex;
+  gap: 3.125rem;
+  align-items: center;
+}
+
+.nav__link {
+  font-family: var(--body-font);
+  font-weight: var(--font-semi-bold);
+  color: var(--white);
+  position: relative;
+}
+
+.nav__link::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--white);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  opacity: 0;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.nav__link:hover::after {
+  opacity: 1;
+}
+
+.nav__button {
+  font-family: var(--title-font);
+  font-weight: var(--font-bold);
+  font-size: 1.25rem;
+  background-color: var(--white);
+  padding: 20px 35px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav__button:hover {
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.15);
 }
