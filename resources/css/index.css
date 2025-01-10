@@ -162,12 +162,13 @@ button {
   margin-top: 4.65rem;
 }
 
-/*=============== BRAND ===============*/
-.brand {
+/*=============== BASE SECTION STYLES ===============*/
+.section {
+  display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.brand__content {
+.section__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -175,14 +176,14 @@ button {
   padding: 160px 105px 170px 165px;
 }
 
-.brand__title {
+.section__title {
   font-family: var(--title-font);
   font-weight: var(--font-black);
   font-size: 2.5rem;
   color: var(--very-dark-desat-blue);
 }
 
-.brand__text {
+.section__text {
   font-family: var(--body-font);
   font-weight: var(--font-semi-bold);
   font-size: 1.125rem;
@@ -190,7 +191,7 @@ button {
   line-height: 1.6;
 }
 
-.brand__link {
+.section__link {
   font-family: var(--title-font);
   font-weight: var(--font-black);
   color: var(--very-dark-desat-blue);
@@ -201,12 +202,11 @@ button {
   margin-left: 0.5rem;
 }
 
-.brand__link::after {
+.section__link::after {
   content: "";
   height: 8px;
   width: 18.5%;
   border-radius: 8px;
-  background-color: var(--yellow);
   position: absolute;
   opacity: 0.3;
   left: -1%;
@@ -216,13 +216,31 @@ button {
   z-index: -1;
 }
 
-.brand__link:hover::after {
+.section__link:hover::after {
   opacity: 0.9;
 }
 
-.brand__bg {
-  background-image: url("../images/desktop/image-transform.jpg");
+.section__bg {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  height: auto;
+}
+
+/*=============== BRAND ===============*/
+.brand .section__bg {
+  background-image: url("../images/desktop/image-transform.jpg");
+}
+
+.brand .section__link::after {
+  background-color: var(--yellow);
+}
+
+/*=============== AUDIENCE ===============*/
+.audience .section__bg {
+  background-image: url("../images/desktop/image-stand-out.jpg");
+}
+
+.audience .section__link::after {
+  background-color: var(--soft-red);
 }
