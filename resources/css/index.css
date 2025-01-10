@@ -123,6 +123,7 @@ button {
   font-family: var(--title-font);
   font-weight: var(--font-bold);
   font-size: 1.25rem;
+  color: var(--very-dark-desat-blue);
   text-transform: uppercase;
   background-color: var(--white);
   padding: 20px 35px;
