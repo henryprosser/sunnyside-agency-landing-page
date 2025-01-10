@@ -223,8 +223,7 @@ button {
 .section__bg {
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 /*=============== BRAND ===============*/
@@ -243,4 +242,47 @@ button {
 
 .audience .section__link::after {
   background-color: var(--soft-red);
+}
+
+/*=============== GRAPHIC DESIGN / PHOTOGRAPHY ===============*/
+.graphic {
+  background-image: url("../images/desktop/image-graphic-design.jpg");
+}
+
+.photography {
+  background-image: url("../images/desktop/image-photography.jpg");
+}
+
+.gdp__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 70px 24%;
+  row-gap: 40px;
+  min-height: 80vh;
+}
+
+.gdp__title {
+  font-family: var(--title-font);
+  font-weight: var(--font-black);
+  font-size: 2rem;
+}
+
+.gdp__text {
+  font-family: var(--body-font);
+  font-weight: var(--font-semi-bold);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.graphic .gdp__title,
+.graphic .gdp__text {
+  color: var(--dark-desat-cyan);
+}
+
+.photography .gdp__title,
+.photography .gdp__text {
+  color: var(--dark-blue);
 }
