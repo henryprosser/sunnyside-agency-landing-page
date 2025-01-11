@@ -13,6 +13,7 @@
   --dark-blue: hsl(198, 62%, 26%);
   --dark-mod-cyan: hsl(168, 34%, 41%);
   --light-blue: hsl(200, 100%, 62%);
+  --light-green: hsl(167, 44%, 70%);
 
   /* Neutral */
   --very-dark-desat-blue: hsl(212, 27%, 19%);
@@ -357,7 +358,79 @@ button {
 
 .gallery__img {
   width: 100%;
-  height: 75%;
   object-fit: cover;
   object-position: top;
+}
+
+/*=============== FOOTER ===============*/
+
+.footer__container {
+  background-color: var(--light-green);
+  display: grid;
+  text-align: center;
+}
+
+.footer__logo {
+  padding-top: 4rem;
+}
+
+.footer__logo--img {
+  width: 175px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 2rem;
+  font-family: var(--body-font);
+  font-weight: var(--font-semi-bold);
+  font-size: 1.1rem;
+  color: var(--dark-mod-cyan);
+}
+
+.footer__item {
+  cursor: pointer;
+}
+
+.footer__item:hover {
+  color: var(--white);
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  margin: 4.5rem 0;
+  gap: 2rem;
+}
+
+.footer__social--img {
+  cursor: pointer;
+}
+
+.footer__social--img:hover {
+  filter: brightness(0) invert(1); /* Change color to white */
+}
+
+.attribution__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: var(--body-font);
+  font-weight: var(--font-bold);
+  font-size: 0.875rem;
+  color: var(--dark-mod-cyan);
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+.attribution__container a {
+  cursor: pointer;
+  font-weight: var(--font-black);
+  font-family: var(--title-font);
+}
+
+.attribution__container a:hover {
+  color: var(--white);
 }
