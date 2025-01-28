@@ -105,11 +105,22 @@ body {
 
 .nav__menu {
   background-color: var(--white);
-  position: fixed;
+  position: absolute;
   padding: 2.75rem 6.5rem;
   z-index: var(--z-fixed);
   top: -100%; /* Hidden by default */
   right: 25px;
+}
+
+.nav__menu-triangle {
+  width: 25px;
+  height: 25px;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background-color: var(--white);
+  position: absolute;
+  top: -25px;
+  right: 0%;
+  z-index: var(--z-fixed);
 }
 
 .nav__list {
@@ -201,7 +212,8 @@ body {
     background-color: rgba(255, 255, 255, 0.15);
   }
 
-  .nav__toggle {
+  .nav__toggle,
+  .nav__menu-triangle {
     display: none;
   }
 }
