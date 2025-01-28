@@ -99,10 +99,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* .nav__toggle {
-  cursor: pointer;
-} */
-
 .nav__menu {
   background-color: var(--white);
   position: absolute;
@@ -298,8 +294,21 @@ body {
   margin-bottom: 4rem;
 }
 
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
 .hero__arrow {
   justify-self: center;
+  animation: jumpInfinite 2s infinite;
 }
 
 @media screen and (min-width: 575px) {
@@ -727,6 +736,3 @@ body {
 .attribution__container a:hover {
   color: var(--white);
 }
-
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
