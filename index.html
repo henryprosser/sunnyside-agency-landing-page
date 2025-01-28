@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./resources/css/index.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <nav class="nav">
         <div class="header__logo">
           <img
@@ -24,7 +24,7 @@
             class="header__logo--img"
           />
         </div>
-        <div class="nav__menu">
+        <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">About</a>
@@ -40,12 +40,17 @@
             </li>
           </ul>
         </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <img src="./resources/images/icon-hamburger.svg" alt="hamburger" />
+        </div>
       </nav>
     </header>
 
     <!-- MAIN -->
     <main>
-      <section class="hero">
+      <section class="hero container">
         <div class="hero__content grid">
           <h1 class="hero__title">We are creatives</h1>
           <img
@@ -58,6 +63,7 @@
 
       <!-- BRAND -->
       <section class="section brand">
+        <div class="section__bg"></div>
         <div class="section__content">
           <h2 class="section__title">Transform your brand</h2>
           <p class="section__text">
@@ -67,7 +73,6 @@
           </p>
           <a href="#" class="section__link">Learn more</a>
         </div>
-        <div class="section__bg"></div>
       </section>
 
       <!-- AUDIENCE -->
@@ -159,24 +164,24 @@
       <section class="gallery">
         <div class="gallery__container">
           <img
-            src="/resources/images/desktop/image-gallery-milkbottles.jpg"
+            src="/resources/images/mobile/image-gallery-milkbottles.jpg"
             alt="milk bottles"
-            class="gallery__img"
+            class="gallery__img milkbottles"
           />
           <img
-            src="./resources/images/desktop/image-gallery-orange.jpg"
+            src="./resources/images/mobile/image-gallery-orange.jpg"
             alt="orange"
-            class="gallery__img"
+            class="gallery__img orange"
           />
           <img
-            src="./resources/images/desktop/image-gallery-cone.jpg"
+            src="./resources/images/mobile/image-gallery-cone.jpg"
             alt="cone"
-            class="gallery__img"
+            class="gallery__img cone"
           />
           <img
-            src="./resources/images/desktop/image-gallery-sugarcubes.jpg"
+            src="./resources/images/mobile/image-gallery-sugar-cubes.jpg"
             alt="sugar cubes"
-            class="gallery__img"
+            class="gallery__img sugarcubes"
           />
         </div>
       </section>
@@ -225,5 +230,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- MAIN JS -->
+    <script src="./resources/js/main.js"></script>
   </body>
 </html>
