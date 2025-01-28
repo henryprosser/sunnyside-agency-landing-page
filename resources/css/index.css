@@ -99,9 +99,9 @@ body {
   flex-wrap: wrap;
 }
 
-.nav__toggle {
+/* .nav__toggle {
   cursor: pointer;
-}
+} */
 
 .nav__menu {
   background-color: var(--white);
@@ -121,6 +121,67 @@ body {
   top: -25px;
   right: 0%;
   z-index: var(--z-fixed);
+}
+
+.nav__toggle {
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+}
+
+.nav__toggle a.main-nav-toggle {
+  display: block;
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 32px;
+  right: 25px;
+}
+
+.nav__toggle a.main-nav-toggle:after,
+.nav__toggle a.main-nav-toggle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 0;
+  border-bottom: 2px solid var(--white);
+  width: 100%;
+  left: 0;
+  right: 0;
+  transition: all ease-out 0.3s;
+}
+
+.nav__toggle a.main-nav-toggle:after {
+  top: 100%;
+}
+
+.nav__toggle a.main-nav-toggle i {
+  display: block;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 2px;
+  background-color: var(--white);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transition: all ease-out 0.1s;
+}
+
+.nav__toggle a.main-nav-toggle.active-menu:after {
+  transform: rotate(-45deg);
+  transform-origin: center;
+  top: 50%;
+}
+
+.nav__toggle a.main-nav-toggle.active-menu:before {
+  transform: rotate(45deg);
+  transform-origin: center;
+  top: 50%;
+}
+
+.nav__toggle a.main-nav-toggle.active-menu i {
+  opacity: 0;
 }
 
 .nav__list {
@@ -153,7 +214,7 @@ body {
   top: 12%;
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 845px) {
   .header__logo img {
     width: 173px;
   }
@@ -341,7 +402,7 @@ body {
   background-color: var(--soft-red);
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 985px) {
   .section {
     grid-template-columns: 1fr 1fr;
   }
@@ -377,7 +438,7 @@ body {
 }
 
 /*=============== BRAND ===============*/
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 985px) {
   .brand .section__bg {
     background-image: url("../images/desktop/image-transform.jpg");
     order: 2;
@@ -389,7 +450,7 @@ body {
 }
 
 /*=============== AUDIENCE ===============*/
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 985px) {
   .audience .section__bg {
     background-image: url("../images/desktop/image-stand-out.jpg");
   }
