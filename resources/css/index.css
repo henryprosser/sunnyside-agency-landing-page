@@ -417,8 +417,8 @@ body {
   }
 
   .section__content {
-    row-gap: 10.5rem;
-    padding: 160px 105px 170px 165px;
+    row-gap: 6rem;
+    padding: 170px 105px 170px 165px;
     text-align: left;
   }
 
