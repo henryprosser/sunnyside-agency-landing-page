@@ -14,7 +14,6 @@ Thanks for checking out this front-end coding project.
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Continued development](#continued-development)
-- [Author](#author)
 
 ## Overview
 
